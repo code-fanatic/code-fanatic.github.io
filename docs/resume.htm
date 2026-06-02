@@ -1,184 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Shuja - Resume</title>
-
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    @media print {
-      body {margin: 0; padding: 0;}
-      ul {list-style-position: inside;}}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shuja Ahmed Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"rel="stylesheet">
 </head>
+<body class="bg-gray-100 text-gray-800 font-['Inter']">
 
-<!-- For Printing
-<body class="bg-white text-gray-800 leading-relaxed">
-  <div class="max-w-[794px] mx-auto my-6 px-6">  --> 
+<div class="max-w-6xl mx-auto bg-white shadow-xl rounded-2xl p-10">
 
-<body class="bg-gray-100 text-gray-800 leading-relaxed">
- <div class="max-w-4xl mx-auto my-10 bg-white shadow-lg rounded-2xl p-8">
+    <!-- Header -->
+    <div class="flex justify-between items-start border-b pb-6">
+        <div>
+            <h1 class="text-5xl font-extrabold tracking-tight text-gray-900">
+                Shuja Ahmed</h1>
 
-  <div class="border-b pb-6 mb-6">
+            <p class="mt-2 text-lg font-semibold text-sky-600">
+                Software Engineer | Web Developer | Android Developer</p>
 
-    <!-- HEADER -->
-      
-      <div class="text-center sm:text-left">
-        
-        <!-- Name -->
-        <h1 class="text-4xl font-bold text-gray-900 tracking-tight">Shuja Ahmed</h1>
+            <div class="flex flex-wrap gap-x-6 gap-y-2 mt-4 text-sm text-gray-700">
+                <div class="flex flex-wrap gap-x-6 gap-y-3 mt-4 text-[15px]">
 
-        <!-- Tagline -->
-        <p class="text-sm text-gray-500 italic mt-1">Software Engineer • Web Developer • Problem Solver</p>
+                    <a href="tel:+923235014140"
+                        class="flex items-center gap-2 text-gray-700 hover:text-sky-600 transition">
+                        <span>📞</span><span class="font-medium">+92 323 5014140</span>
+                    </a>
+                    <a href="mailto:shujabutt4@gmail.com"
+                        class="flex items-center gap-2 text-gray-700 hover:text-sky-600 transition">
+                        <span>📧</span><span class="font-medium">shujabutt4@gmail.com</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/shuja-ahmed4/"
+                        target="_blank"
+                        class="flex items-center gap-2 text-gray-700 hover:text-sky-600 transition">
+                        <span>🔗</span><span class="font-medium">linkedin.com/in/shuja-ahmed4</span>
+                    </a>
+                        <a href="https://github.com/code-fanatic"
+                        target="_blank"
+                        class="flex items-center gap-2 text-gray-700 hover:text-sky-600 transition">
+                        <span>💻</span><span class="font-medium">github.com/code-fanatic</span>
+                    </a>
 
-        <!-- Contact Info -->
-        <div class="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700">
+                    <div class="flex items-center gap-2 text-gray-700"><span>📍</span><span class="font-medium">Gujranwala, Pakistan</span></div>
 
-          <!-- Email -->
-          <a href="mailto:shujabutt4@gmail.com" class="flex items-center gap-2 hover:text-blue-600 transition"><span>📧</span><span>shujabutt4@gmail.com</span></a>
-
-          <!-- Phone -->
-          <a href="tel:+923235014140"class="flex items-center gap-2 hover:text-blue-600 transition"><span>📞</span><span>+92 3235014140</span></a>
-
-          <!-- Location -->
-          <div class="flex items-center gap-2"><span>📍</span><span>Baghbanpura, Gujranwala, Punjab, Pakistan</span></div>
+                </div>
+            </div>
         </div>
+    </div>
 
-        <!-- Social Links -->
-          <div class="mt-4 flex flex-wrap gap-5 text-sm">
+    <!-- Main Layout -->
+    <div class="grid grid-cols-3 gap-10 mt-8">
 
-          <!-- LinkedIn -->
-          <a href="https://www.linkedin.com/in/shuja-ahmed4/" target="_blank" class="flex items-center gap-2 hover:text-blue-700 transition">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#0A66C2"><path d="M20.447 20.452H16.89V14.86c0-1.333-.027-3.049-1.858-3.049-1.859 0-2.144 1.45-2.144 2.949v5.692H9.333V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.37-1.85 3.601 0 4.266 2.37 4.266 5.455v6.286zM5.337 7.433a2.063 2.063 0 1 1 0-4.126 2.063 2.063 0 0 1 0 4.126zM7.119 20.452H3.556V9h3.563v11.452z"/></svg>
-            <span>shuja-ahmed4</span>
-          </a>
+        <!-- Left Column -->
+        <div class="col-span-1 space-y-8">
 
-          <!-- GitHub -->
-          <a href="https://github.com/code-fanatic"target="_blank" class="flex items-center gap-2 hover:text-gray-900 transition">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.648.5.5 5.648.5 12a11.5 11.5 0 0 0 7.863 10.918c.575.105.787-.25.787-.556 0-.275-.012-1.188-.018-2.156-3.2.694-3.878-1.543-3.878-1.543-.525-1.337-1.281-1.693-1.281-1.693-1.05-.719.08-.706.08-.706 1.162.081 1.775 1.193 1.775 1.193 1.032 1.768 2.707 1.257 3.367.962.106-.747.404-1.256.734-1.545-2.555-.291-5.243-1.278-5.243-5.69 0-1.257.45-2.285 1.188-3.09-.119-.291-.515-1.462.112-3.05 0 0 .969-.31 3.175 1.18a10.96 10.96 0 0 1 5.782 0c2.206-1.49 3.173-1.18 3.173-1.18.63 1.588.234 2.759.115 3.05.74.805 1.186 1.833 1.186 3.09 0 4.423-2.692 5.395-5.256 5.681.415.357.785 1.058.785 2.133 0 1.541-.014 2.783-.014 3.163 0 .309.207.667.793.554A11.503 11.503 0 0 0 23.5 12C23.5 5.648 18.352.5 12 .5z"/></svg>
-            <span>code-fanatic</span>
-          </a>
+            <!-- Summary -->
+            <section>
+                <h2 class="text-xl font-bold border-b-4 border-black mb-4">
+                    SUMMARY
+                </h2>
 
-        </div>
-      </div>
-  </div>
+                <p class="leading-relaxed text-gray-700">
+                    Software Engineering student with experience in web
+                    development, Android development, and API integrations.
+                    Built AI-powered Discord bots, portfolio websites, and
+                    productivity applications. Strong foundation in JavaScript,
+                    Kotlin, Node.js, HTML, CSS, and modern frontend technologies.
+                </p>
+            </section>
 
-    <!-- About -->
-    <section class="mb-5">
-      <h2 class="text-xl font-semibold text-gray-900 mb-2 border-b">About</h2>
-      <p class="text-sm leading-relaxed">
-        Passionate about developing web applications and front-end systems.
-        Skilled at writing clear, concise code, easy to maintain and troubleshoot code.
-        Able to work independently in remote or office environments.</p>
-      <p class="text-sm mt-1 leading-relaxed">
-        Enjoy building and optimized web and software applications,
-        always exploring new programming languages and techniques.</p>
-    </section>
+            <!-- Education -->
+            <section>
+                <h2 class="text-xl font-bold border-b-4 border-black mb-4">
+                    EDUCATION
+                </h2>
 
-    <!-- Skills -->
-    <section class="mb-5">
-      <h2 class="text-xl font-semibold text-gray-900 mb-2 border-b pb-1">Skills & Abilities</h2>
-      <ul class="list-disc pl-6 text-sm columns-2 space-y-1">
-        <li>Web Development (HTML, CSS, JavaScript)</li>
-        <li>Integrations (API, Frameworks)</li>
-        <li>Programming (C++, Kotlin)</li>
-        <li>Fast typing speed</li>
-        <li>Advanced computer skills</li>
-        <li>Adaptability</li>
-        <li>Teamwork & independent work</li>
-      </ul>
-    </section>
+                <div class="space-y-5">
 
-    <!-- Experience -->
-    <section class="mb-5">
-      <h2 class="text-xl font-semibold text-gray-900 mb-2 border-b pb-1">Experience</h2>
-      <ul class="list-disc pl-6 text-sm columns-2 space-y-3">
-        
-        <li class="break-inside-avoid">
-          <a href="https://code-fanatic.github.io/shuja/" target="_blank" class="font-semibold text-blue-600 hover:underline">Portfolio Website</a><br>
-          <span class="text-gray-600">Website</span>
-        </li>
+                    <div>
+                        <h3 class="font-bold text-xl">
+                            Bachelor of Software Engineering
+                        </h3>
 
-        <li class="break-inside-avoid">
-          <a href="https://code-fanatic.github.io/todo-material-3/" target="_blank" class="font-semibold text-blue-600 hover:underline">Todo App</a><br>
-          <span class="text-gray-600">Android Material 3 UI Inspired Web App</span>
-        </li>
-      
-        <li class="break-inside-avoid">
-          <a href="https://code-fanatic.github.io/Calculator/" target="_blank" class="font-semibold text-blue-600 hover:underline">Calculator</a><br>
-          <span class="text-gray-600">iOS Inspired Style Web App</span>
-        </li>
-      
-      <li class="break-inside-avoid">
-          <a href="https://github.com/code-fanatic/Discord-JS-Ai-bot" target="_blank" class="font-semibold text-blue-600 hover:underline">Discord Ai Chat bot</a><br>
-          <span class="text-gray-600">Deepseek AI integration, .............</span>
-        </li>
+                        <p class="text-blue-600 font-semibold">
+                            Virtual University of Pakistan
+                        </p>
 
-      </ul>
-    </section>
+                        <p class="text-sm text-gray-600">
+                            Sep 2023 – Jun 2026
+                        </p>
+                    </div>
 
-    <!-- Education -->
-    <section class="mb-5">
-      <h2 class="text-xl font-semibold text-gray-900 mb-2 border-b pb-1">Education</h2>
-      <ul class="list-disc pl-6 text-sm columns-2 space-y-3">
-        <li>
-          <span class="font-semibold">Bachelor of Software Engineering</span><br>
-          <span class="text-gray-600">Virtual University of Pakistan (2026)</span>
-        </li><li>
-          <span class="font-semibold">F.Sc Pre-Engineering</span><br>
-          <span class="text-gray-600">Punjab Group of Colleges, Gujranwala (2020)</span>
-        </li><li>
-          <span class="font-semibold">Matriculation Computer Science</span><br>
-          <span class="text-gray-600">Little Scholar Public School, Gujranwala (2018)</span>
-        </li>
-      </ul>
-    </section>
+                    <div>
+                        <h3 class="font-bold text-lg">
+                            F.Sc Pre-Engineering
+                        </h3>
 
-    <!-- Certifications -->
-    <section class="mb-5">
-      <h2 class="text-xl font-semibold text-gray-900 mb-2 border-b pb-1">Certifications</h2>
-      <ul class="list-disc pl-6 text-sm columns-2 space-y-3">
-        
-        <li class="break-inside-avoid">
-          <a href="https://coursera.org/share/92baac960646e497a51b53fa27a99c58" target="_blank" class="font-semibold text-blue-600 hover:underline">Meta Front-End Developer</a><br>
-          <span class="text-gray-600">Meta • 2025</span>
-        </li>
-      
-        <li class="break-inside-avoid">
-          <a href="https://coursera.org/share/02b49054455fffb21b135afdd2c5f48b" target="_blank" class="font-semibold text-blue-600 hover:underline">Bits & Bytes of Computer Networking</a><br>
-          <span class="text-gray-600">Google • 2024</span>
-        </li>
-      
-      <li class="break-inside-avoid">
-          <a href="https://coursera.org/share/0a78eda6acc1154265b4803919101d09" target="_blank" class="font-semibold text-blue-600 hover:underline">Technical Support Fundamentals</a><br>
-          <span class="text-gray-600">Google • 2022</span>
-        </li>
+                        <p class="text-blue-600">
+                            Punjab Group of Colleges
+                        </p>
 
-      </ul>
-    </section>
+                        <p class="text-sm text-gray-600">
+                            2018 – 2020
+                        </p>
+                    </div>
 
-    <!-- Strengths -->
-    <section class="mb-5">
-      <h2 class="text-xl font-semibold text-gray-900 mb-2 border-b pb-1">Personal Strengths</h2>
-      <ul class="list-disc pl-6 text-sm columns-2 space-y-1">
-        <li>Hardworking and responsible</li>
-        <li>Quick learner</li>
-        <li>Good communication skills</li>
-        <li>Punctual and reliable</li>
-      </ul>
-    </section>
+                    <div>
+                        <h3 class="font-bold text-lg">
+                            Matriculation (Computer Science)
+                        </h3>
 
-    <!-- Languages -->
-    <section class="mb-5">
-      <h2 class="text-xl font-semibold text-gray-900 mb-2 border-b pb-1">Languages</h2>
-      <ul class="list-disc pl-6 text-sm columns-2 space-y-1">
-        <li>English: Very good command</li>
-        <li>Urdu: Native speaker</li>
-      </ul>
-    </section>
+                        <p class="text-blue-600">
+                            Little Scholar Public School
+                        </p>
+
+                        <p class="text-sm text-gray-600">
+                            2016 – 2018
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Certifications -->
+            <section>
+  <h2 class="text-xl font-bold border-b-4 border-black mb-4">
+    CERTIFICATIONS
+  </h2>
+
+  <div class="space-y-4">
+
+    <div class="border-l-4 border-blue-600 pl-4">
+      <a href="https://coursera.org/share/92baac960646e497a51b53fa27a99c58"
+         target="_blank"
+         class="font-semibold text-blue-600 hover:underline">
+        Meta Front-End Developer
+      </a>
+
+      <p class="text-sm text-gray-600">
+        Meta • 2025
+      </p>
+
+      <p class="text-sm text-gray-500 mt-1">
+        Modern frontend development, responsive design, JavaScript and web technologies.
+      </p>
+    </div>
+
+    <div class="border-l-4 border-blue-600 pl-4">
+      <a href="https://coursera.org/share/02b49054455fffb21b135afdd2c5f48b"
+         target="_blank"
+         class="font-semibold text-blue-600 hover:underline">
+        Bits & Bytes of Computer Networking
+      </a>
+
+      <p class="text-sm text-gray-600">
+        Google • 2024
+      </p>
+    </div>
+
+    <div class="border-l-4 border-blue-600 pl-4">
+      <a href="https://coursera.org/share/0a78eda6acc1154265b4803919101d09"
+         target="_blank"
+         class="font-semibold text-blue-600 hover:underline">
+        Technical Support Fundamentals
+      </a>
+
+      <p class="text-sm text-gray-600">
+        Google • 2022
+      </p>
+    </div>
 
   </div>
+</section>
+
+        </div>
+
+        <!-- Right Column -->
+        <div class="col-span-2 space-y-8">
+
+            <!-- Skills -->
+            <section>
+                <h2 class="text-xl font-bold border-b-4 border-black mb-4">
+                    SKILLS
+                </h2>
+
+                <ul class="grid grid-cols-2 gap-3 text-[15px]">
+
+                <li><strong>Languages:</strong>JavaScript, Kotlin, C++</p>
+                <li><strong>Frontend:</strong>HTML, CSS, Tailwind CSS</p>
+                <li><strong>Backend:</strong>Node.js, REST APIs</p>
+                <li><strong>Tools:</strong>Git, GitHub</p>
+                <li><strong>Mobile:</strong>Android Development</p>
+                </ul>
+            </section>
+
+            <!-- Languages -->
+            <section>
+                <h2 class="text-xl font-bold border-b-4 border-black mb-4">
+                    LANGUAGES
+                </h2>
+
+                <ul class="space-y-2">
+                    <li><strong>English:</strong> Professional Working Proficiency</li>
+                    <li><strong>Urdu:</strong> Native</li>
+                </ul>
+            </section>
+
+            <!-- Projects -->
+            <section>
+                <h2 class="text-xl font-bold border-b-4 border-black mb-4">
+                    PROJECTS
+                </h2>
+
+                <div class="space-y-6">
+
+                    <div>
+                    <a href="https://github.com/code-fanatic/Discord-JS-Ai-bot"
+                        target="_blank"
+                        class="text-xl font-bold text-blue-600 hover:underline">
+                        Discord AI Chat Bot
+                    </a>
+
+                    <p class="text-[14px] text-gray-600 mb-2">
+                        JavaScript • Node.js • Discord.js • DeepSeek API
+                    </p>
+
+                    <ul class="list-disc pl-5 space-y-1 text-sm">
+                        <li>Developed a modular Discord bot supporting slash and prefix commands.</li>
+                        <li>Integrated DeepSeek AI for conversational responses.</li>
+                        <li>Implemented dynamic command loading and custom embed messaging.</li>
+                        <li>Designed scalable project architecture for future feature expansion.</li>
+                    </ul>
+                    </div>
+
+                    <div>
+                    <a href="https://code-fanatic.github.io/shuja/"
+                        target="_blank"
+                        class="text-xl font-bold text-blue-600 hover:underline">
+                        Portfolio Website
+                    </a>
+
+                    <p class="text-[14px] text-gray-600 mb-2">
+                        HTML • CSS • JavaScript • Tailwind CSS
+                    </p>
+
+                    <ul class="list-disc pl-5 space-y-1 text-sm">
+                        <li>Designed and developed a responsive personal portfolio website.</li>
+                        <li>Showcased projects, certifications, and technical skills.</li>
+                        <li>Optimized layout for desktop and mobile devices.</li>
+                    </ul>
+                    </div>
+
+                    <div>
+                    <a href="https://code-fanatic.github.io/todo-material-3/"
+                        target="_blank"
+                        class="text-xl font-bold text-blue-600 hover:underline">
+                        Todo App
+                    </a>
+
+                    <p class="text-[14px] text-gray-600 mb-2">
+                        HTML • CSS • JavaScript
+                    </p>
+
+                    <ul class="list-disc pl-5 space-y-1 text-sm">
+                        <li>Built a Material 3 inspired task management application.</li>
+                        <li>Implemented task creation, editing, and deletion features.</li>
+                        <li>Focused on clean UI and user-friendly experience.</li>
+                    </ul>
+                    </div>
+
+                    <div>
+                    <a href="https://code-fanatic.github.io/Calculator/"
+                        target="_blank"
+                        class="text-xl font-bold text-blue-600 hover:underline">
+                        Calculator
+                    </a>
+
+                    <p class="text-[14px] text-gray-600 mb-2">
+                        HTML • CSS • JavaScript
+                    </p>
+
+                    <ul class="list-disc pl-5 space-y-1 text-sm">
+                        <li>Developed an iOS-inspired calculator interface.</li>
+                        <li>Implemented standard arithmetic operations and responsive design.</li>
+                        <li>Focused on performance and smooth user interactions.</li>
+                    </ul>
+                    </div>
+
+                </div>
+                </section>
+
+        </div>
+
+    </div>
+
+</div>
+
 </body>
 </html>
